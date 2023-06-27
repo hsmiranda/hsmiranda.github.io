@@ -1,10 +1,10 @@
 title: Herberson Blog
 email: ab560mh8f@mozmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >- 
   Este é o meu blog, aonde eu costumo publicar alguns conteudos, anotações,
   pensamentos, estudos e qualquer outra coisa que seja relevante.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://hsmiranda.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" 
+url: "https://hsmiranda.github.io"
 twitter_username: _hsmiranda
 github_username:  hsmiranda
 
