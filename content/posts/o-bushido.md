@@ -1,7 +1,7 @@
 +++
 title = 'O Bushido'
 date = 2023-09-27T16:02:28-03:00
-draft = true
+draft = false
 +++
 
 # O Bushido

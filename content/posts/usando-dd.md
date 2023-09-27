@@ -1,7 +1,7 @@
 +++
 title = 'Usando Dd'
 date = 2023-09-27T15:58:12-03:00
-draft = true
+draft = false
 +++
 
 # Usando o comando DD

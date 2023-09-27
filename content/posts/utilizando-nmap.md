@@ -1,7 +1,7 @@
 +++
 title = 'Utilizando o scanner de rede nmap'
 date = 2023-09-27T15:59:57-03:00
-draft = true
+draft = false
 +++
 
 # Utilizando o scanner de rede nmap

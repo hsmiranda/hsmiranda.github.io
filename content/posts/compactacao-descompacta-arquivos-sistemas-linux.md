@@ -1,7 +1,7 @@
 +++
 title = 'Compactacao Descompacta Arquivos Sistemas Linux'
 date = 2023-09-27T15:59:25-03:00
-draft = true
+draft = false
 +++
 ---
 
