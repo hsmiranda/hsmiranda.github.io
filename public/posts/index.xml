@@ -5,8 +5,51 @@
     <link>https://hsmiranda.github.io/posts/</link>
     <description>Recent content in Posts on Herberson Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
-    <lastBuildDate>Wed, 27 Sep 2023 15:30:13 -0300</lastBuildDate><atom:link href="https://hsmiranda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>pt_br</language>
+    <lastBuildDate>Wed, 27 Sep 2023 16:02:28 -0300</lastBuildDate><atom:link href="https://hsmiranda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O Bushido</title>
+      <link>https://hsmiranda.github.io/posts/o-bushido/</link>
+      <pubDate>Wed, 27 Sep 2023 16:02:28 -0300</pubDate>
+      
+      <guid>https://hsmiranda.github.io/posts/o-bushido/</guid>
+      <description>O Bushido O Bushido (武士道) ou “Caminho do Guerreiro” é uma espécie de código de conduta que era levada muito a sério pelos samurais. Se trata de regras baseadas em princípios morais na qual o guerreiro samurai tinha o dever de segui-las a todo custo, não só no campo de batalha como também em sua vida diária.
+Embora a maioria dos samurais seguissem o Código de Conduta Bushido, havia aqueles que não respeitavam os princípios básicos e com isso traziam desonra e má reputação sobre ele e sua família.</description>
+    </item>
+    
+    <item>
+      <title>Utilizando o scanner de rede nmap</title>
+      <link>https://hsmiranda.github.io/posts/utilizando-nmap/</link>
+      <pubDate>Wed, 27 Sep 2023 15:59:57 -0300</pubDate>
+      
+      <guid>https://hsmiranda.github.io/posts/utilizando-nmap/</guid>
+      <description>Utilizando o scanner de rede nmap O Nmap (“Network Mapper”) é uma ferramenta de código aberto para exploração de rede e auditoria de segurança. Ela foi desenhada para escanear rapidamente redes amplas, embora também funcione muito bem contra hosts individuais.
+O Nmap utiliza pacotes IP em estado bruto (raw) de maneira inovadora para determinar quais hosts estão disponíveis na rede, quais serviços (nome da aplicação e versão) os hosts oferecem, quais sistemas operacionais (e versões de SO) eles estão executando, que tipos de filtro de pacotes/firewalls estão em uso, e dezenas de outras características.</description>
+    </item>
+    
+    <item>
+      <title>Compactacao Descompacta Arquivos Sistemas Linux</title>
+      <link>https://hsmiranda.github.io/posts/compactacao-descompacta-arquivos-sistemas-linux/</link>
+      <pubDate>Wed, 27 Sep 2023 15:59:25 -0300</pubDate>
+      
+      <guid>https://hsmiranda.github.io/posts/compactacao-descompacta-arquivos-sistemas-linux/</guid>
+      <description>Compactação e descompactação de arquivos em sistemas Linux
+Estive um bom tempo sem cabeça para escrever mais voltando ativa segue abaixo um artigo sobre compactação e descompactação de arquivo em ambientes Linux.
+Gzip O gzip é a abreviação de GNU zip, um Software Livre de compressão sem perda de dados, criado por Jean-loup Gailly e Mark Adler. O programa é baseado no algoritmo DEFLATE. A extensão gerada pelo gzip é o .</description>
+    </item>
+    
+    <item>
+      <title>Usando Dd</title>
+      <link>https://hsmiranda.github.io/posts/usando-dd/</link>
+      <pubDate>Wed, 27 Sep 2023 15:58:12 -0300</pubDate>
+      
+      <guid>https://hsmiranda.github.io/posts/usando-dd/</guid>
+      <description>Usando o comando DD O comando dd(de direct copy) e um clássico dos ambientes Unix-Like, com ele você pode fazer uma copia exata de um arquivo, ou seja uma copia bit a bit.
+Sintaxe básica:
+$dd if=origem of=destino Por exemplo:
+bash-3.1$ ls -la total 5272 drwxrwxrwx 2 v0rtex users 4096 2010-02-07 18:23 . drwx--x--x 116 v0rtex users 4096 2010-02-07 18:03 .. -rwxr-xr-x 1 v0rtex users 5375842 2007-12-25 21:04 05 - Whole Lotta Love.</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://hsmiranda.github.io/posts/my-first-post/</link>

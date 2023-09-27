@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt_br">
+  <head>
+    <title>Compactacao Descompacta Arquivos Sistemas Linux // Herberson Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Herberson Miranda" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Compactacao Descompacta Arquivos Sistemas Linux"/>
+<meta name="twitter:description" content="Compactação e descompactação de arquivos em sistemas Linux
+Estive um bom tempo sem cabeça para escrever mais voltando ativa segue abaixo um artigo sobre compactação e descompactação de arquivo em ambientes Linux.
+Gzip O gzip é a abreviação de GNU zip, um Software Livre de compressão sem perda de dados, criado por Jean-loup Gailly e Mark Adler. O programa é baseado no algoritmo DEFLATE. A extensão gerada pelo gzip é o ."/>
+
+    <meta property="og:title" content="Compactacao Descompacta Arquivos Sistemas Linux" />
+<meta property="og:description" content="Compactação e descompactação de arquivos em sistemas Linux
+Estive um bom tempo sem cabeça para escrever mais voltando ativa segue abaixo um artigo sobre compactação e descompactação de arquivo em ambientes Linux.
+Gzip O gzip é a abreviação de GNU zip, um Software Livre de compressão sem perda de dados, criado por Jean-loup Gailly e Mark Adler. O programa é baseado no algoritmo DEFLATE. A extensão gerada pelo gzip é o ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hsmiranda.github.io/posts/compactacao-descompacta-arquivos-sistemas-linux/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-27T15:59:25-03:00" />
+<meta property="article:modified_time" content="2023-09-27T15:59:25-03:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://hsmiranda.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Herberson Miranda" /></a>
+      <span class="app-header-title">Herberson Blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Este é o meu blog</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/_hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Compactacao Descompacta Arquivos Sistemas Linux</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 27, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <hr>
+<p>Compactação e descompactação de arquivos em sistemas Linux</p>
+<p>Estive um bom tempo sem cabeça para escrever mais voltando ativa segue abaixo um artigo sobre compactação e descompactação de arquivo em ambientes Linux.</p>
+<h2 id="gzip">Gzip</h2>
+<p>O gzip é a abreviação de GNU zip, um Software Livre de compressão sem perda de
+dados, criado por Jean-loup Gailly e Mark Adler. O programa é baseado no
+algoritmo DEFLATE. A extensão gerada pelo gzip é o .gz, e seu formato contém
+apenas um arquivo comprimido.</p>
+<p>Em sistemas UNIX é comum gerar um arquivo contendo diversos outros arquivos com
+o programa tar, e depois comprimi-lo com o gzip, gerando um arquivo .tar.gz.
+Não confundir com o formato ZIP, que é mais portável e comporta diversos
+arquivos sem precisar recorrer a um outro programa externo para isso.</p>
+<h3 id="uso-pratico-do-gzip">Uso pratico do gzip:</h3>
+<p>Compactando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ gzip nome_do_arquivo
+</span></span></code></pre></div><p>O resultado sera um arquivo nome_do_arquivo.gz, para ter mais eficiência em compactar o arquivo usa-se o parâmetro -9:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$gzip -9 nome_do_arquivo
+</span></span></code></pre></div><p>Descompactando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$gunzip nome_do_arquivo.gz
+</span></span></code></pre></div><p>Isso ira descompactar o arquivo no diretório atual.</p>
+<h2 id="bzip2">Bzip2</h2>
+<p>O bzip2 é um algoritmo e um software Compactador de arquivos. Sua licença é
+livre e de código aberto (open source), podendo ser melhor desenvolvido para
+fins próprios. Seu desenvolvedor é Julian Seward, tendo começado seu trabalho
+com este projeto em 1996, porém vindo somente a ficar popular no ano 2000.</p>
+<p>A principal vantagem em favor de bzip2 é o tamanho do arquivo compactado. bzip2
+quase sempre irá comprimir melhor que gzip. Em alguns casos, isto pode resultar
+em arquivos dramaticamente menores. Isto pode ser uma grande vantagem para
+pessoas com conexões lentas. A desvantagem de bzip2 é que ele utiliza mais
+recursos de processamento do que o gzip. Isto significa que descomprimir um
+arquivo com bzip2 geralmente será mais demorado e utilizar mais o processador
+do que o gzip o faria.</p>
+<p>Na escolha de um programa de compressão a se usado, você precisa considerar o
+tempo de compressão e o tamanho do arquivo compactado e determinar o que é
+mais importante.</p>
+<p>Uso pratico do bzip2</p>
+<p>Compactando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$bzip2 nome_do_arquivo
+</span></span></code></pre></div><p>Será gerado um arquivo .bz2, para obter melhor eficiência usa-se o parâmetro -9:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$bzip2 -9 nome_do_arquivo
+</span></span></code></pre></div><p>Descompactando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$gunzip2 nome_do_arquivo.bz2
+</span></span></code></pre></div><p>Irá descompactar o arquivo no diretório atual.</p>
+<h2 id="tar">Tar</h2>
+<p>O TAR ou tar (abreviatura de Tape ARchive), é um formato de arquivamento de
+arquivos. Apesar do nome “tar” ser derivado de “tape archive”, o seu uso não
+se restringe a fitas magnéticas. Ele se tornou largamente usado para armazenar
+vários arquivos em um único, preservando informações como datas e permissões.
+Normalmente é produzido pelo comando “tar”. É suportado pelo programa Winrar.</p>
+<p>O tartambém é o nome de um programa de arquivamento desenvolvido para armazenar
+e extrair arquivos de um arquivo tar (que contém os demais) conhecido como
+tarfile ou tarball.</p>
+<p>O primeiro argumento para tar deve ser uma das seguintes opções: Acdrtux,
+seguido por uma das seguintes funções adicionais. Os argumento finais do tar
+são os nomes dos arquivos ou diretórios nos quais eles podem ser arquivados.</p>
+<p>O uso de um nome de diretório, implica sempre que os subdiretórios sob ele,
+serão incluídosno arquivo. Uso pratico:</p>
+<p>Descompactando tar.gz :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ tar -zxvf arquivo.tar.gz
+</span></span></code></pre></div><p>Descompactando tar.bz2:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$tar -jxvf arquivo.tar.bz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Isso ira descompactar o arquivo no diretório atual. 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Para criar um arquivo.tar use:
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>shell
+</span></span><span style="display:flex;"><span>$ tar -cvf arq.tar diretorio
+</span></span></code></pre></div><p>Para compactar em tar.gz:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ tar -zcvf arquivos.tar.gz arquivos
+</span></span></code></pre></div><p>Para compactar em tar.bz2:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ tar -jcvf arquivos.tar.bz2 arquivos
+</span></span></code></pre></div><p>Lista de parâmetros:</p>
+<pre tabindex="0"><code>-c –cria um novo arquivo tar;
+-M –cria, lista ou extrai um arquivo multivolume;
+-p –mantém as permissões originais do(s) arquivo(s);
+-r –acrescenta arquivos a um arquivo tar;
+-t –exibe o conteúdo de um arquivo tar;
+-v –exibe detalhes da operação;
+-w –pede confirmação antes de cada ação;
+-x –extrai arquivos de um arquivo tar;
+-z –comprime ou extrai arquivos tar resultante com o gzip;
+-j –comprime ou extrai arquivos tar resultante com o bz2;
+-f –especifica o arquivo tar a ser usado;
+-C –especifica o diretório dos arquivos a serem armazenados.
+</code></pre><h2 id="zip">Zip</h2>
+<p>Arquivo de compressão é denominado zip, e o de descompressão é denominado unzip.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ zip teste 
+</span></span></code></pre></div><p>*Isto criará o arquivo teste.zip, que irá conter todos os arquivos do diretório
+atual.</p>
+<p>O zip adicionará a extensão .zip automaticamente, de forma que não há
+necessidade de incluí-la no nome do arquivo. Você também pode recursivamente
+comprimir os subdiretórios existentes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ zip -r teste *
+</span></span></code></pre></div><p>Bem como, descomprimir arquivos também é fácil.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ unzip teste.zip
+</span></span></code></pre></div><p>Isto irá extrair todos os arquivos e diretórios no arquivo teste.zip.
+Os utilitários zip têm várias opções avançadas para criar pacotes que podem
+se extrair automaticamente, excluir arquivos, controlar o tamanho do arquivo
+compactado, mostrar o que acontecerá e muito mais. Veja as páginas de manual
+dos comandos zip e unzip para descobrir como usar essas opções.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

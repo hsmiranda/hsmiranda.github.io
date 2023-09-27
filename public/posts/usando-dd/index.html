@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt_br">
+  <head>
+    <title>Usando Dd // Herberson Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Herberson Miranda" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Usando Dd"/>
+<meta name="twitter:description" content="Usando o comando DD O comando dd(de direct copy) e um clássico dos ambientes Unix-Like, com ele você pode fazer uma copia exata de um arquivo, ou seja uma copia bit a bit.
+Sintaxe básica:
+$dd if=origem of=destino Por exemplo:
+bash-3.1$ ls -la total 5272 drwxrwxrwx 2 v0rtex users 4096 2010-02-07 18:23 . drwx--x--x 116 v0rtex users 4096 2010-02-07 18:03 .. -rwxr-xr-x 1 v0rtex users 5375842 2007-12-25 21:04 05 - Whole Lotta Love."/>
+
+    <meta property="og:title" content="Usando Dd" />
+<meta property="og:description" content="Usando o comando DD O comando dd(de direct copy) e um clássico dos ambientes Unix-Like, com ele você pode fazer uma copia exata de um arquivo, ou seja uma copia bit a bit.
+Sintaxe básica:
+$dd if=origem of=destino Por exemplo:
+bash-3.1$ ls -la total 5272 drwxrwxrwx 2 v0rtex users 4096 2010-02-07 18:23 . drwx--x--x 116 v0rtex users 4096 2010-02-07 18:03 .. -rwxr-xr-x 1 v0rtex users 5375842 2007-12-25 21:04 05 - Whole Lotta Love." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hsmiranda.github.io/posts/usando-dd/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-27T15:58:12-03:00" />
+<meta property="article:modified_time" content="2023-09-27T15:58:12-03:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://hsmiranda.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Herberson Miranda" /></a>
+      <span class="app-header-title">Herberson Blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Este é o meu blog</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/_hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Usando Dd</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 27, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="usando-o-comando-dd">Usando o comando DD</h1>
+<p>O comando dd(de direct copy) e um clássico dos ambientes Unix-Like, com ele você pode fazer uma copia exata de um arquivo, ou seja uma copia bit a bit.</p>
+<p>Sintaxe básica:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>origem of<span style="color:#f92672">=</span>destino
+</span></span></code></pre></div><p>Por exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>bash-3.1$ ls -la
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">5272</span>
+</span></span><span style="display:flex;"><span>drwxrwxrwx <span style="color:#ae81ff">2</span> v0rtex users <span style="color:#ae81ff">4096</span> 2010-02-07 18:23 .
+</span></span><span style="display:flex;"><span>drwx--x--x <span style="color:#ae81ff">116</span> v0rtex users <span style="color:#ae81ff">4096</span> 2010-02-07 18:03 ..
+</span></span><span style="display:flex;"><span>-rwxr-xr-x <span style="color:#ae81ff">1</span> v0rtex users <span style="color:#ae81ff">5375842</span> 2007-12-25 21:04 <span style="color:#ae81ff">05</span> - Whole Lotta Love.mp3
+</span></span><span style="display:flex;"><span>bash-3.1$ dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>05<span style="color:#ae81ff">\ </span>-<span style="color:#ae81ff">\ </span>Whole<span style="color:#ae81ff">\ </span>Lotta<span style="color:#ae81ff">\ </span>Love.mp3 of<span style="color:#f92672">=</span>whole_lotta_love.mp3
+</span></span><span style="display:flex;"><span>10499+1 registros de entrada
+</span></span><span style="display:flex;"><span>10499+1 registros de saída
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5375842</span> bytes <span style="color:#f92672">(</span>5,4 MB<span style="color:#f92672">)</span> copiados, 0,0682746 s, 78,7 MB/s
+</span></span><span style="display:flex;"><span>bash-3.1$ ls -lh
+</span></span><span style="display:flex;"><span>total 11M
+</span></span><span style="display:flex;"><span>-rwxr-xr-x <span style="color:#ae81ff">1</span> v0rtex users 5,2M 2007-12-25 21:04 <span style="color:#ae81ff">05</span> - Whole Lotta Love.mp3
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> v0rtex users 5,2M 2010-02-07 18:23 whole_lotta_love.mp3
+</span></span></code></pre></div><p>Foi feita uma copia do arquivo “05\ -\ Whole\ Lotta\ Love.mp3″ com o nome whole_lotta_love.mp3 :) uma copia exata feita bit-a-bit pelo comando dd.</p>
+<p>Dicas para uso do comando dd:</p>
+<p>Copiando um HD para um arquivo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># dd if=/dev/sda of=~/backup_hd.img</span>
+</span></span></code></pre></div><p>Com isso será feita uma copia exata do hd dentro do diretório do root(#) com o nome “backup_hd.img”.</p>
+<p>Se quiser restaurar o “backp_hd.img” no /dev/sda2(lembre o sda2 deve ter pelo menos o mesmo tamanho do arquivo “backup.hd” se não os resultados poderão ser desastrosos.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># dd if=backup_hd.img of=/dev/sda2</span>
+</span></span></code></pre></div><p>Copiando HD para HD:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#dd if=/dev/sda1 of=/dev/sda2</span>
+</span></span></code></pre></div><p>Com isso será feita copia do /dev/sda1 para o /dev/sda2.</p>
+<p>Fazendo uma copia do hd para um arquivo compactado:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/sda1 | gzip &gt; backup_hd.img.gz
+</span></span></code></pre></div><p>Para descompactar dentro de outro HD use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># gzip -d -c backup_hd.img.gz | dd of=/dev/sda2</span>
+</span></span></code></pre></div><p>Criar um arquivo .iso:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#dd if=diretorio of=iso_do_diretorio.iso</span>
+</span></span></code></pre></div><p>Para visualizar progresso de cópia de arquivos, vá em outro terminal e execute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ watch df -h
+</span></span></code></pre></div><p>Para converter todos as letras maiúsculas de um documento para letras minúsculas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>ficheiro1 of<span style="color:#f92672">=</span>ficheiro2 conv<span style="color:#f92672">=</span>lcase
+</span></span></code></pre></div><p>se quisermos converter todas as letras do ficheiro2 para maiúsculas:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>ficheiro2 of<span style="color:#f92672">=</span>ficheiro3 conv<span style="color:#f92672">=</span>ucase
+</span></span></code></pre></div><p>Para zerar(formatar) o seu HD:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># dd if=/dev/zero of=/dev/hda</span>
+</span></span></code></pre></div><p>Gerar senhas de forma (pseudo) aleatória:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>$ dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/random bs<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> count<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span> | base64 - 
+</span></span></code></pre></div><p>Se o seu dd estiver atualizado (o pacote <em>coreutils</em> for a versão 8.24 ou superior) você pode usar o parametro: <em>status=progress</em> por exemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>dd <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/dev/sda of<span style="color:#f92672">=</span>/dev/sdb bs<span style="color:#f92672">=</span>1024k status<span style="color:#f92672">=</span>progress
+</span></span></code></pre></div><p>Espero que as informações sobre o dd seja bem uteis, quando tiver novas dicas venho a postar mais.</p>
+<p>Att.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="pt_br">
+  <head>
+    <title>Utilizando o scanner de rede nmap // Herberson Blog</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.119.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Herberson Miranda" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Utilizando o scanner de rede nmap"/>
+<meta name="twitter:description" content="Utilizando o scanner de rede nmap O Nmap (“Network Mapper”) é uma ferramenta de código aberto para exploração de rede e auditoria de segurança. Ela foi desenhada para escanear rapidamente redes amplas, embora também funcione muito bem contra hosts individuais.
+O Nmap utiliza pacotes IP em estado bruto (raw) de maneira inovadora para determinar quais hosts estão disponíveis na rede, quais serviços (nome da aplicação e versão) os hosts oferecem, quais sistemas operacionais (e versões de SO) eles estão executando, que tipos de filtro de pacotes/firewalls estão em uso, e dezenas de outras características."/>
+
+    <meta property="og:title" content="Utilizando o scanner de rede nmap" />
+<meta property="og:description" content="Utilizando o scanner de rede nmap O Nmap (“Network Mapper”) é uma ferramenta de código aberto para exploração de rede e auditoria de segurança. Ela foi desenhada para escanear rapidamente redes amplas, embora também funcione muito bem contra hosts individuais.
+O Nmap utiliza pacotes IP em estado bruto (raw) de maneira inovadora para determinar quais hosts estão disponíveis na rede, quais serviços (nome da aplicação e versão) os hosts oferecem, quais sistemas operacionais (e versões de SO) eles estão executando, que tipos de filtro de pacotes/firewalls estão em uso, e dezenas de outras características." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://hsmiranda.github.io/posts/utilizando-nmap/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-27T15:59:57-03:00" />
+<meta property="article:modified_time" content="2023-09-27T15:59:57-03:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://hsmiranda.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="Herberson Miranda" /></a>
+      <span class="app-header-title">Herberson Blog</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Este é o meu blog</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://twitter.com/_hsmiranda" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-twitter">
+  <title>Twitter</title>
+  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Utilizando o scanner de rede nmap</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 27, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h1 id="utilizando-o-scanner-de-rede-nmap">Utilizando o scanner de rede nmap</h1>
+<p>O Nmap (“Network Mapper”) é uma ferramenta de código aberto para exploração de
+rede e auditoria de segurança. Ela foi desenhada para escanear rapidamente redes
+amplas, embora também funcione muito bem contra hosts individuais.</p>
+<p>O Nmap utiliza pacotes IP em estado bruto (raw) de maneira inovadora para
+determinar quais hosts estão disponíveis na rede, quais serviços
+(nome da aplicação e versão) os hosts oferecem, quais sistemas operacionais (e
+versões de SO) eles estão executando, que tipos de filtro de pacotes/firewalls
+estão em uso, e dezenas de outras características.</p>
+<p>Embora o Nmap seja normalmente utilizado para auditorias de segurança, muitos
+administradores de sistemas e rede consideram-no útil para tarefas rotineiras
+tais como inventário de rede, gerenciamento de serviços de atualização
+agendados, e monitoramento de host ou disponibilidade de serviço.</p>
+<p>Além disso, como já citado em post anterior, essa ferramenta pode ser utilizada
+para validar o funcionamento do firewall e IPS.</p>
+<p>Neste texto são apresentadas diversas dicas para o uso do scanner nmap.</p>
+<p>Usando nmap para descoberta de host.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -sL 128.230.18.30-35</span>
+</span></span><span style="display:flex;"><span>Host npropane.syr.edu <span style="color:#f92672">(</span>128.230.18.30<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Host helpeiam1.syr.edu <span style="color:#f92672">(</span>128.230.18.31<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Host tracker5-18.syr.edu <span style="color:#f92672">(</span>128.230.18.32<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Host mirage2.syr.edu <span style="color:#f92672">(</span>128.230.18.33<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Host backup01-18.syr.edu <span style="color:#f92672">(</span>128.230.18.34<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Host cwis01.syr.edu <span style="color:#f92672">(</span>128.230.18.35<span style="color:#f92672">)</span> not scanned
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">6</span> IP addresses <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span> hosts up<span style="color:#f92672">)</span> scanned in 6.628 seconds
+</span></span></code></pre></div><p>Utilizando como banner scan, escaneado uma faixa de ips, procurando pela porta 25 rodando um e-mail.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -sV 12.150.145.135-139 -p25 | grep IMail -B 3</span>
+</span></span><span style="display:flex;"><span>Interesting ports on 138.145.static.conninc.com <span style="color:#f92672">(</span>12.150.145.138<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>25/tcp open smtp IMail NT-ESMTP 6.06 28262-4
+</span></span><span style="display:flex;"><span>--
+</span></span><span style="display:flex;"><span>Interesting ports on 139.145.static.conninc.com <span style="color:#f92672">(</span>12.150.145.139<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>25/tcp open smtp IMail NT-ESMTP 6.06 28263-5
+</span></span></code></pre></div><p>Usando como banner scan, escaneado uma faixa de ips,procurando pela porta 25 rodando um e-mail,e salvando a saída em um arquivo</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -sV 12.150.145.137-139 -p25 | grep IMail -B 3 &gt;&gt; nmap.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cat nmap.txt</span>
+</span></span><span style="display:flex;"><span>Interesting ports on 138.145.static.conninc.com <span style="color:#f92672">(</span>12.150.145.138<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>25/tcp open smtp IMail NT-ESMTP 6.06 29384-6
+</span></span><span style="display:flex;"><span>Interesting ports on 139.145.static.conninc.com <span style="color:#f92672">(</span>12.150.145.139<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>25/tcp open smtp IMail NT-ESMTP 6.06 29385-7
+</span></span></code></pre></div><p>Usando a mais intensiva opção de checagem de versão.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -sV --version-all 128.230.18.35 -p 80</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 22:37 EST
+</span></span><span style="display:flex;"><span>Interesting ports on cwis01.syr.edu <span style="color:#f92672">(</span>128.230.18.35<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>80/tcp open http Apache httpd
+</span></span></code></pre></div><p>Usando nmap como scanner de banners, escaneando uma faixa aleatória de IPs procurando pela porta 21 aberta, rodando o ProFTP.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -sV -iR 1500 -p21 | grep ProFTPD -B 3</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 17:41 EST
+</span></span><span style="display:flex;"><span>Interesting ports on www.buford-thompson.net <span style="color:#f92672">(</span>161.58.19.143<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE VERSION
+</span></span><span style="display:flex;"><span>21/tcp open ftp ProFTPD
+</span></span></code></pre></div><p>Usando o nmap para descobrir o sistema operacional do host</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -PN -O --osscan-limit 38.117.198.214 | grep Running</span>
+</span></span><span style="display:flex;"><span>Running <span style="color:#f92672">(</span>JUST GUESSING<span style="color:#f92672">)</span> : ZyXEL ZyNOS <span style="color:#f92672">(</span>96%<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>Usando nmap como tracerouter verificando a porta aberta é contando os hops</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap --traceroute 128.230.18.35</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 22:27 EST
+</span></span><span style="display:flex;"><span>Interesting ports on cwis01.syr.edu <span style="color:#f92672">(</span>128.230.18.35<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>Not shown: <span style="color:#ae81ff">1656</span> closed ports, <span style="color:#ae81ff">49</span> filtered ports
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE
+</span></span><span style="display:flex;"><span>80/tcp open http
+</span></span><span style="display:flex;"><span>TRACEROUTE <span style="color:#f92672">(</span>using port 80/tcp<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>HOP RTT ADDRESS
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> 2.89 192.168.1.1
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> 12.18 10.114.0.1
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span> 9.52 172.22.5.13
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span> 12.33 172.22.5.69
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> 10.86 172.22.33.73
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span> 12.48 172.22.32.106
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span> 15.21 12.86.87.29
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span> 41.73 tbr2.attga.ip.att.net <span style="color:#f92672">(</span>12.122.96.74<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span> 41.78 tbr1.dlstx.ip.att.net <span style="color:#f92672">(</span>12.122.2.89<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span> 73.50 ggr3.dlstx.ip.att.net <span style="color:#f92672">(</span>12.123.16.201<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">11</span> 42.87 br2-a3120s2.attga.ip.att.net <span style="color:#f92672">(</span>192.205.33.206<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">12</span> 66.36 66.192.240.226
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">13</span> 74.74 64-132-176-170.static.twtelecom.net <span style="color:#f92672">(</span>64.132.176.170<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">14</span> 77.85 128.230.61.1
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">15</span> 74.08 c6509r-srv.syr.edu <span style="color:#f92672">(</span>128.230.61.58<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">16</span> 73.36 cwis01.syr.edu <span style="color:#f92672">(</span>128.230.18.35<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 111.295 seconds
+</span></span></code></pre></div><p>Usando nmap para testar o estado de uma porta.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap --reason 128.230.18.35 -p 21</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 22:31 EST
+</span></span><span style="display:flex;"><span>Interesting ports on cwis01.syr.edu <span style="color:#f92672">(</span>128.230.18.35<span style="color:#f92672">)</span>:
+</span></span><span style="display:flex;"><span>PORT STATE SERVICE REASON
+</span></span><span style="display:flex;"><span>21/tcp filtered ftp no-response
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">1</span> IP address <span style="color:#f92672">(</span><span style="color:#ae81ff">1</span> host up<span style="color:#f92672">)</span> scanned in 1.247 seconds
+</span></span></code></pre></div><p>Usando nmap para MAC address spoofing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap –spoof-mac 08:00:69:02:01:FC -iR 3</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 22:51 EST
+</span></span><span style="display:flex;"><span>Spoofing MAC address 08:00:69:02:01:FC <span style="color:#f92672">(</span>Silicon Graphics<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">3</span> IP addresses <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span> hosts up<span style="color:#f92672">)</span> scanned in 3.387 seconds
+</span></span></code></pre></div><p>Fazendo uma varredura com IPs forjado,com uma escolha aleatória de alvos.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e"># nmap -D 198.162.1.100,198.162.1.101 -iR 3</span>
+</span></span><span style="display:flex;"><span>Starting Nmap 4.50 <span style="color:#f92672">(</span> http://insecure.org <span style="color:#f92672">)</span> at 2008-01-17 23:22 EST
+</span></span><span style="display:flex;"><span>Nmap <span style="color:#66d9ef">done</span>: <span style="color:#ae81ff">3</span> IP addresses <span style="color:#f92672">(</span><span style="color:#ae81ff">0</span> hosts up<span style="color:#f92672">)</span> scanned in 3.082 seconds
+</span></span></code></pre></div><p>Bom com isso tivemos alguns exemplo do uso do NMAP e constantamos que ele é uma
+ferramenta essencial para todos os sysadmin.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
