@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Novo post!"
+date:   2023-06-23 12:36:29 -0300
+categories: jekyll blog primeiro-post
+---
+Este e o segundo post.
