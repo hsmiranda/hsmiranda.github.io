@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Herberson Blog</title>
+    <link>https://hsmiranda.github.io/posts/</link>
+    <description>Recent content in Posts on Herberson Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Wed, 27 Sep 2023 15:41:13 -0300</lastBuildDate><atom:link href="https://hsmiranda.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>https://hsmiranda.github.io/posts/my-first-post/</link>
+      <pubDate>Wed, 27 Sep 2023 15:41:13 -0300</pubDate>
+      
+      <guid>https://hsmiranda.github.io/posts/my-first-post/</guid>
+      <description>Introdução Hi!
+Testando agora usando o hugo, as primeiras impressões estão sendo bastante positivas.
+Gostei dessa forma dinâmica dele.
+Vamos ver com a evolução dos novos posts.
+Att.</description>
+    </item>
+    
+  </channel>
+</rss>

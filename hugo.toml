@@ -1,0 +1,4 @@
+baseURL = 'https://hsmiranda.github.io/'
+languageCode = 'pt-br'
+title = 'Herberson Blog'
+theme = 'ananke'
