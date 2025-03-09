@@ -2,7 +2,6 @@ baseURL = 'https://hsmiranda.github.io/'
 languageCode = 'pt_br'
 title = 'Herberson Blog'
 theme = "hugo-theme-m10c"
-paginate = 8
 
 [menu]
   [[menu.main]]
