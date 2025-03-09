@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Herberson Blog</title>
-    <link>https://hsmiranda.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Herberson Blog</description>
     <generator>Hugo</generator>
     <language>pt_br</language>
     <lastBuildDate>Wed, 27 Sep 2023 16:02:28 -0300</lastBuildDate>
-    <atom:link href="https://hsmiranda.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>O Bushido</title>
-      <link>https://hsmiranda.github.io/posts/o-bushido/</link>
+      <link>http://localhost:1313/posts/o-bushido/</link>
       <pubDate>Wed, 27 Sep 2023 16:02:28 -0300</pubDate>
-      <guid>https://hsmiranda.github.io/posts/o-bushido/</guid>
+      <guid>http://localhost:1313/posts/o-bushido/</guid>
       <description>&lt;h1 id=&#34;o-bushido&#34;&gt;O Bushido&lt;/h1&gt;&#xA;&lt;p&gt;O Bushido (武士道) ou “Caminho do Guerreiro” é uma espécie de código de conduta que era levada muito a sério pelos samurais. Se trata de regras baseadas em princípios morais na qual o guerreiro samurai tinha o dever de segui-las a todo custo, não só no campo de batalha como também em sua vida diária.&lt;/p&gt;&#xA;&lt;p&gt;Embora a maioria dos samurais seguissem o Código de Conduta Bushido, havia aqueles que não respeitavam os princípios básicos e com isso traziam desonra e má reputação sobre ele e sua família. Um samurai sem honra era uma coisa imperdoável e a única forma de lavar a sua honra era através do Harakiri (Ritual de Suicídio).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Utilizando o scanner de rede nmap</title>
-      <link>https://hsmiranda.github.io/posts/utilizando-nmap/</link>
+      <link>http://localhost:1313/posts/utilizando-nmap/</link>
       <pubDate>Wed, 27 Sep 2023 15:59:57 -0300</pubDate>
-      <guid>https://hsmiranda.github.io/posts/utilizando-nmap/</guid>
+      <guid>http://localhost:1313/posts/utilizando-nmap/</guid>
       <description>&lt;h1 id=&#34;utilizando-o-scanner-de-rede-nmap&#34;&gt;Utilizando o scanner de rede nmap&lt;/h1&gt;&#xA;&lt;p&gt;O Nmap (“Network Mapper”) é uma ferramenta de código aberto para exploração de&#xA;rede e auditoria de segurança. Ela foi desenhada para escanear rapidamente redes&#xA;amplas, embora também funcione muito bem contra hosts individuais.&lt;/p&gt;&#xA;&lt;p&gt;O Nmap utiliza pacotes IP em estado bruto (raw) de maneira inovadora para&#xA;determinar quais hosts estão disponíveis na rede, quais serviços&#xA;(nome da aplicação e versão) os hosts oferecem, quais sistemas operacionais (e&#xA;versões de SO) eles estão executando, que tipos de filtro de pacotes/firewalls&#xA;estão em uso, e dezenas de outras características.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Compactacao Descompacta Arquivos Sistemas Linux</title>
-      <link>https://hsmiranda.github.io/posts/compactacao-descompacta-arquivos-sistemas-linux/</link>
+      <link>http://localhost:1313/posts/compactacao-descompacta-arquivos-sistemas-linux/</link>
       <pubDate>Wed, 27 Sep 2023 15:59:25 -0300</pubDate>
-      <guid>https://hsmiranda.github.io/posts/compactacao-descompacta-arquivos-sistemas-linux/</guid>
+      <guid>http://localhost:1313/posts/compactacao-descompacta-arquivos-sistemas-linux/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;Compactação e descompactação de arquivos em sistemas Linux&lt;/p&gt;&#xA;&lt;p&gt;Estive um bom tempo sem cabeça para escrever mais voltando ativa segue abaixo um artigo sobre compactação e descompactação de arquivo em ambientes Linux.&lt;/p&gt;&#xA;&lt;h2 id=&#34;gzip&#34;&gt;Gzip&lt;/h2&gt;&#xA;&lt;p&gt;O gzip é a abreviação de GNU zip, um Software Livre de compressão sem perda de&#xA;dados, criado por Jean-loup Gailly e Mark Adler. O programa é baseado no&#xA;algoritmo DEFLATE. A extensão gerada pelo gzip é o .gz, e seu formato contém&#xA;apenas um arquivo comprimido.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Usando Dd</title>
-      <link>https://hsmiranda.github.io/posts/usando-dd/</link>
+      <link>http://localhost:1313/posts/usando-dd/</link>
       <pubDate>Wed, 27 Sep 2023 15:58:12 -0300</pubDate>
-      <guid>https://hsmiranda.github.io/posts/usando-dd/</guid>
+      <guid>http://localhost:1313/posts/usando-dd/</guid>
       <description>&lt;h1 id=&#34;usando-o-comando-dd&#34;&gt;Usando o comando DD&lt;/h1&gt;&#xA;&lt;p&gt;O comando dd(de direct copy) e um clássico dos ambientes Unix-Like, com ele você pode fazer uma copia exata de um arquivo, ou seja uma copia bit a bit.&lt;/p&gt;&#xA;&lt;p&gt;Sintaxe básica:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;origem of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;destino&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Por exemplo:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash-3.1$ ls -la&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;total &lt;span style=&#34;color:#ae81ff&#34;&gt;5272&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;drwxrwxrwx &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; v0rtex users &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; 2010-02-07 18:23 .&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;drwx--x--x &lt;span style=&#34;color:#ae81ff&#34;&gt;116&lt;/span&gt; v0rtex users &lt;span style=&#34;color:#ae81ff&#34;&gt;4096&lt;/span&gt; 2010-02-07 18:03 ..&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-rwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; v0rtex users &lt;span style=&#34;color:#ae81ff&#34;&gt;5375842&lt;/span&gt; 2007-12-25 21:04 &lt;span style=&#34;color:#ae81ff&#34;&gt;05&lt;/span&gt; - Whole Lotta Love.mp3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash-3.1$ dd &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;05&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;-&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Whole&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Lotta&lt;span style=&#34;color:#ae81ff&#34;&gt;\ &lt;/span&gt;Love.mp3 of&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;whole_lotta_love.mp3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;10499+1 registros de entrada&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;10499+1 registros de saída&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5375842&lt;/span&gt; bytes &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;5,4 MB&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; copiados, 0,0682746 s, 78,7 MB/s&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bash-3.1$ ls -lh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;total 11M&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-rwxr-xr-x &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; v0rtex users 5,2M 2007-12-25 21:04 &lt;span style=&#34;color:#ae81ff&#34;&gt;05&lt;/span&gt; - Whole Lotta Love.mp3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-rw-r--r-- &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; v0rtex users 5,2M 2010-02-07 18:23 whole_lotta_love.mp3&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Foi feita uma copia do arquivo “05\ -\ Whole\ Lotta\ Love.mp3″ com o nome whole_lotta_love.mp3 :) uma copia exata feita bit-a-bit pelo comando dd.&lt;/p&gt;</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>https://hsmiranda.github.io/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Wed, 27 Sep 2023 15:30:13 -0300</pubDate>
-      <guid>https://hsmiranda.github.io/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;&#xA;&lt;p&gt;Hi!&lt;/p&gt;&#xA;&lt;p&gt;Testando agora usando o hugo, as primeiras impressões estão sendo bastante&#xA;positivas.&lt;/p&gt;&#xA;&lt;p&gt;Gostei dessa forma dinâmica dele.&lt;/p&gt;&#xA;&lt;p&gt;É muito simples de utilizar, só seguir o quickstart: &lt;a href=&#34;https://gohugo.io/getting-started/quick-start/&#34;&gt;https://gohugo.io/getting-started/quick-start/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Comando relevantes:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;hugo new site quickstart&lt;/li&gt;&#xA;&lt;li&gt;hugo new content posts/my-first-post.md&lt;/li&gt;&#xA;&lt;li&gt;hugo server -D&lt;/li&gt;&#xA;&lt;li&gt;hugo&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;o ultimo comando, vai gerar dentro da pasta: &amp;lsquo;public&amp;rsquo; todo o conteudo estático, ai só pegar ele e subir na sua hospedagem.&lt;/p&gt;&#xA;&lt;p&gt;Se for usar o github-pages tem o guide: &lt;a href=&#34;https://gohugo.io/hosting-and-deployment/hosting-on-github/&#34;&gt;https://gohugo.io/hosting-and-deployment/hosting-on-github/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
